@@ -80,7 +80,7 @@ class CustomNavbar extends HTMLElement {
 </style>
       <nav class="navbar" part="navbar">
         <div class="logo">
-          <img src="images/logo.png" alt="Sevahetu Logo" class="logo-image">
+          <img src="./images/logo.jpg" class="logo-image" />
         <button class="mobile-menu-btn" id="mobileMenuBtn">
           <i data-feather="menu"></i>
         </button>
