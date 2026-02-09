@@ -109,4 +109,26 @@ custom-footer::part(footer) {
   color: #94a3b8;
   font-size: 0.875rem;
 }
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+ 
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: none;
+    flex-direction: column;
+    padding: 16px 0;
+    z-index: 999;
+  }
+ 
+  .nav-links.active {
+    display: flex;
+  }
+}
+ 
 
