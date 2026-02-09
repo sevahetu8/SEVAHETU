@@ -77,6 +77,21 @@ class CustomNavbar extends HTMLElement {
             display: block;
           }
         }
+        .navbar {
+  display: flex;
+  align-items: center;
+}
+ 
+.logo {
+  display: flex;
+  align-items: center;
+}
+ 
+.nav-links {
+  margin-left: auto;   /* ⭐ actual push to right */
+  display: flex;
+  gap: 28px;
+}
 </style>
       <nav class="navbar" part="navbar">
         <div class="logo">
