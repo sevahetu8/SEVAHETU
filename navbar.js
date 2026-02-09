@@ -77,20 +77,25 @@ class CustomNavbar extends HTMLElement {
             display: block;
           }
         }
-        .navbar {
+       .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* 🔥 KEY FIX */
+  width: 100%;
 }
  
 .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
  
 .nav-links {
-  margin-left: auto;   /* ⭐ actual push to right */
   display: flex;
   gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 </style>
       <nav class="navbar" part="navbar">
