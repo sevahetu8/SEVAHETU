@@ -109,3 +109,15 @@ custom-footer::part(footer) {
   color: #94a3b8;
   font-size: 0.875rem;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+}
+ 
+.nav-links {
+  margin-left: auto;   /* ⭐ MAIN FIX */
+  display: flex;
+  gap: 28px;
+}
+ 
+
