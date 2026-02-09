@@ -104,6 +104,8 @@ class CustomNavbar extends HTMLElement {
         <button class="mobile-menu-btn" id="mobileMenuBtn">
           <i data-feather="menu"></i>
         </button>
+        </div>
+        
         <ul class="nav-links" id="navLinks">
           <li><a href="#how-it-works">How It Works</a></li>
           <li><a href="https://wa.me/917982600602" target="_blank" rel="noopener noreferrer">
