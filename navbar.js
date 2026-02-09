@@ -3,7 +3,6 @@ class CustomNavbar extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
-       <style>
         :host {
           display: block;
         }
@@ -81,11 +80,11 @@ class CustomNavbar extends HTMLElement {
 </style>
       <nav class="navbar" part="navbar">
         <div class="logo">
-          <img src="./images/logo.jpg" class="logo-image" />
+          <img src="https://huggingface.co/spaces/simran53111/sevahetu-emergency-support/resolve/main/images/michael%20dale.jpg" alt="Sevahetu Logo" class="logo-image">
+        </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn">
           <i data-feather="menu"></i>
         </button>
-        </div>     
         <ul class="nav-links" id="navLinks">
           <li><a href="#how-it-works">How It Works</a></li>
           <li><a href="https://wa.me/917982600602" target="_blank" rel="noopener noreferrer">
