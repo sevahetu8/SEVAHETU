@@ -3,71 +3,81 @@ class CustomNavbar extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
-       :host {
-  display: block;
-  width: 100%;
-}
- 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  background: #fff;
-  position: relative;
-}
- 
-.logo {
-  flex-shrink: 0;
-}
- 
-.logo-image {
-  height: 36px;
-}
- 
+       <style>
+        :host {
+          display: block;
+        }
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 2rem;
+          background-color: white;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          position: sticky;
+          top: 0;
+          z-index: 100;
+        }
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        .logo-image {
+          height: 140px;
+          width: auto;
+        }
 .nav-links {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
- 
-.nav-links li a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-}
- 
-/* MOBILE */
-.mobile-menu-btn {
-  display: none;
-  background: none;
-  border: none;
-}
- 
-@media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: block;
-  }
- 
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    flex-direction: column;
-    padding: 16px 20px;
-    display: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    z-index: 999;
-  }
- 
-  .nav-links.active {
-    display: flex;
-  }
-}
+          display: flex;
+          list-style: none;
+        }
+        .nav-links li {
+          margin: 0 1rem;
+        }
+        .nav-links a {
+          text-decoration: none;
+          color: #334155;
+          font-weight: 500;
+          transition: color 0.3s;
+        }
+        .nav-links a:hover {
+          color: #2563eb;
+        }
+        
+        .mobile-menu-btn {
+          display: none;
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: #334155;
+        }
+        
+        @media (max-width: 768px) {
+          .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          }
+          
+          .nav-links.active {
+            display: flex;
+          }
+          
+          .nav-links li {
+            margin: 0.5rem 0;
+          }
+          
+          .mobile-menu-btn {
+            display: block;
+          }
+        }
 </style>
       <nav class="navbar" part="navbar">
         <div class="logo">
