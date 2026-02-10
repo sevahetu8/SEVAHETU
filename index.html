@@ -294,5 +294,32 @@
     <script>
         feather.replace();
     </script>
+                    <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+ 
+const firebaseConfig = {
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+ 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyB255QTBt0DdKei2zymvpBZDG6ew7_jxBM",
+  authDomain: "sevahetu8.firebaseapp.com",
+  projectId: "sevahetu8",
+  storageBucket: "sevahetu8.firebasestorage.app",
+  messagingSenderId: "746236784623",
+  appId: "1:746236784623:web:81602c03205720a61dd01a"
+};
+ 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+};
+ 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+</script>
 </body>
 </html>
