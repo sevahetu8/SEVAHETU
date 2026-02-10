@@ -320,6 +320,31 @@ const app = initializeApp(firebaseConfig);
  
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+                        <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+ 
+const firebaseConfig = {
+  // tumhara copied firebaseConfig
+};
+ 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+ 
+// 🔽 YAHI NAYA CODE ADD KARNA THA
+document.getElementById("notifyForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+ 
+  const email = document.getElementById("email").value;
+ 
+  await addDoc(collection(db, "notifyEmails"), {
+    email: email,
+    createdAt: new Date()
+  });
+ 
+  alert("Thanks! We'll notify you.");
+});
+</script>
 </script>
 </body>
 </html>
