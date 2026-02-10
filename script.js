@@ -7,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
 // Form submission handling
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
